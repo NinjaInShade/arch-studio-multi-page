@@ -4,4 +4,14 @@ button,
   outline: none;
   border: none;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn {
+  background-color: var(--black);
+  padding: 24px 32px;
+}
+
+.btn:hover {
+  background-color: var(--grey-dark);
 }
