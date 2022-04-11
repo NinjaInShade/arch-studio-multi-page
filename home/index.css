@@ -1,0 +1,49 @@
+.header {
+  padding: 0 100px;
+}
+
+.header__container {
+  position: relative;
+  background-image: url('/assets/home/desktop/image-hero-paramour.jpg');
+  max-width: var(--max-width);
+  padding: 180px 0 180px 190px;
+  margin: 0 auto;
+}
+
+.header__container::before {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+  background-color: hsla(0, 0%, 0%, 0.35);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.header__content-container {
+  position: relative;
+  z-index: 1;
+}
+
+.header__title,
+.header__subtitle {
+  color: #fff;
+}
+
+.header__subtitle {
+  margin: 14px 0 40px 0;
+  max-width: 445px;
+}
+
+.header__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__btn img {
+  max-height: 18px;
+}

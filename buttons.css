@@ -8,7 +8,11 @@ button,
 }
 
 .btn {
+  color: #fff;
   background-color: var(--black);
+  font-size: var(--body);
+  line-height: var(--body-lh);
+  font-weight: 700;
   padding: 24px 32px;
 }
 
