@@ -71,6 +71,14 @@ h3 {
   font-weight: 500;
 }
 
+.focus-w:focus-visible {
+  outline: var(--grey-light) dotted 2px;
+}
+
+.focus-b:focus-visible {
+  outline: var(--black) dotted 2px;
+}
+
 @media (max-width: 500px) {
   /* :root {} */
 }
