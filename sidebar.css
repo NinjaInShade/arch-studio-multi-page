@@ -4,6 +4,8 @@
 
 .sidebar__links,
 .sidebar__overlay {
+  animation-name: fadeIn;
+  animation-duration: 0.25s;
   position: absolute;
   top: 96px;
   right: 0;
@@ -36,5 +38,15 @@
 @media (max-width: 700px) {
   .sidebar--active {
     display: block;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
