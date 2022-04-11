@@ -21,22 +21,22 @@
 
   --error: hsl(0, 68%, 61%);
 
-  --watermark: 200px;
+  --watermark: 12.5rem;
   --watermark-lh: 200px;
   --watermark-ls: -5px;
 
-  --h1: 80px;
+  --h1: 5rem;
   --h1-lh: 80px;
   --h1-ls: -2px;
 
-  --h2: 56px;
+  --h2: 3.5rem;
   --h2-lh: 56px;
   --h2-ls: -2px;
 
-  --h3: 18px;
+  --h3: 1.125rem;
   --h3-lh: 25px;
 
-  --body: 15px;
+  --body: 0.938rem;
   --body-lh: 25px;
 }
 
@@ -66,6 +66,7 @@ h3 {
 .body {
   font-size: var(--body);
   line-height: var(--body-lh);
+  font-weight: 500;
 }
 
 @media (max-width: 500px) {
