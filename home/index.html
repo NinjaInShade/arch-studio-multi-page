@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/base.css" />
     <link rel="stylesheet" href="/main.css" />
     <link rel="stylesheet" href="/buttons.css" />
+    <link rel="stylesheet" href="/navbar.css" />
+    <link rel="stylesheet" href="/home/index.css" />
     <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,11 +16,23 @@
       href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Arch studio mulit-page website</title>
+    <title>Arch studio multi-page website</title>
   </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/home/index.html">
+          <img src="/assets/logo.svg" alt="Arch logo. Arch as text." class="navbar__logo" />
+        </a>
+        <ul class="navbar__links">
+          <li><a class="body navbar__link" href="/portfolio/index.html">Portfolio</a></li>
+          <li><a class="body navbar__link" href="/about/index.html">About Us</a></li>
+          <li><a class="body navbar__link" href="/contact/index.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <main></main>
   </body>
 </html>

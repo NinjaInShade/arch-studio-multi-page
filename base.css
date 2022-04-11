@@ -38,6 +38,8 @@
 
   --body: 0.938rem;
   --body-lh: 25px;
+
+  --max-width: 1100px;
 }
 
 h1 {
