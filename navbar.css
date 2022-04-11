@@ -6,6 +6,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -48,4 +49,28 @@
   width: 25px;
   height: 1px;
   left: 50%;
+}
+
+.current-page {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: -100px;
+  top: -56px;
+}
+
+.current-page div {
+  background-color: var(--grey);
+  margin-bottom: 48px;
+  height: 105px;
+  width: 1px;
+}
+
+.current-page__text {
+  color: var(--grey);
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  letter-spacing: 15px;
 }
