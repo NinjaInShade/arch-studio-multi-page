@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/main.css" />
     <link rel="stylesheet" href="/buttons.css" />
     <link rel="stylesheet" href="/navbar.css" />
+    <link rel="stylesheet" href="/sidebar.css" />
     <link rel="stylesheet" href="/home/index.css" />
     <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +22,11 @@
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-------------------------->
+    <!------    NAVBAR    ------>
+    <!-------------------------->
+
     <nav class="navbar">
       <div class="navbar__container">
         <aside class="current-page">
@@ -35,7 +41,7 @@
           <li><a class="body focus-b navbar__link" href="/about/index.html">About Us</a></li>
           <li><a class="body focus-b navbar__link" href="/contact/index.html">Contact</a></li>
         </ul>
-        <button class="focus-b navbar__hamburger" aria-label="hamburger">
+        <button class="focus-b navbar__hamburger" aria-label="hamburger" id="navbar-btn">
           <img
             src="/assets/icons/icon-hamburger.svg"
             alt="Hamburger icon"
@@ -51,6 +57,22 @@
         </button>
       </div>
     </nav>
+
+    <!-------------------------->
+    <!-----    SIDEBAR    ------>
+    <!-------------------------->
+
+    <nav class="sidebar" id="sidebar">
+      <ul class="sidebar__links">
+        <li><a class="body focus-b sidebar__link" href="/portfolio/index.html">Portfolio</a></li>
+        <li><a class="body focus-b sidebar__link" href="/about/index.html">About Us</a></li>
+        <li><a class="body focus-b sidebar__link" href="/contact/index.html">Contact</a></li>
+      </ul>
+      <div class="sidebar__overlay"></div>
+    </nav>
+
     <main></main>
+
+    <script src="/main.js"></script>
   </body>
 </html>
