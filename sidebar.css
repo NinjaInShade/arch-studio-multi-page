@@ -15,7 +15,7 @@
   background-color: var(--grey-light);
   padding: 48px;
   width: 350px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sidebar__links li:not(:last-child) {
@@ -23,6 +23,7 @@
 }
 
 .sidebar__overlay {
+  z-index: 2;
   background-color: hsla(0, 0%, 0%, 0.5);
   height: calc(100vh - 96px);
   width: 100%;

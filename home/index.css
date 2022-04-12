@@ -95,20 +95,5 @@
   background-color: var(--grey-light);
 }
 
-@media (max-width: 500px) {
-  #header__container-01 {
-    background-image: url('/assets/home/mobile/image-hero-paramour.jpg');
-  }
-
-  #header__container-02 {
-    background-image: url('/assets/home/mobile/image-hero-seraph.jpg');
-  }
-
-  #header__container-03 {
-    background-image: url('/assets/home/mobile/image-hero-federal.jpg');
-  }
-
-  #header__container-04 {
-    background-image: url('/assets/home/mobile/image-hero-trinity.jpg');
-  }
+@media (max-width: 1100px) {
 }
