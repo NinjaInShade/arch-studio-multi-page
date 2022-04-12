@@ -6,6 +6,7 @@
   position: relative;
   max-width: var(--max-width);
   padding: 180px 0 180px 190px;
+  max-height: 720px;
   margin: 0 auto;
 }
 
@@ -45,6 +46,10 @@
 .header__title,
 .header__subtitle {
   color: #fff;
+}
+
+.header__title {
+  max-width: 540px;
 }
 
 .header__subtitle {
