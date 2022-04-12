@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Arch studio mulit-page website" />
     <link rel="stylesheet" href="/base.css" />
-    <link rel="stylesheet" href="/main.css" />
     <link rel="stylesheet" href="/buttons.css" />
     <link rel="stylesheet" href="/navbar.css" />
     <link rel="stylesheet" href="/sidebar.css" />
@@ -76,17 +75,26 @@
     <!-------------------------->
 
     <header class="header">
-      <div class="header__container">
+      <div class="header__container" id="header__container-01">
         <div class="header__content-container">
           <h1 class="header__title">Project<br />Paramour</h1>
           <p class="body header__subtitle">
             Project made for an art museum near Southwest London. Project Paramour is a statement of
             bold, modern architecture.
           </p>
-          <a href="/portfolio/index.html" class="btn header__btn">
+          <a href="/portfolio/index.html" class="focus-w btn header__btn">
             See Our Portfolio<img src="/assets/icons/icon-arrow.svg" alt="Decorative arrow"
           /></a>
         </div>
+
+        <ul class="header__btns-container">
+          <li>
+            <button class="body focus-b header__next-btn header__next-btn--active">01</button>
+          </li>
+          <li><button class="body focus-b header__next-btn">02</button></li>
+          <li><button class="body focus-b header__next-btn">03</button></li>
+          <li><button class="body focus-b header__next-btn">04</button></li>
+        </ul>
       </div>
     </header>
 

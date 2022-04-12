@@ -4,10 +4,25 @@
 
 .header__container {
   position: relative;
-  background-image: url('/assets/home/desktop/image-hero-paramour.jpg');
   max-width: var(--max-width);
   padding: 180px 0 180px 190px;
   margin: 0 auto;
+}
+
+#header__container-01 {
+  background-image: url('/assets/home/desktop/image-hero-paramour.jpg');
+}
+
+#header__container-02 {
+  background-image: url('/assets/home/desktop/image-hero-seraph.jpg');
+}
+
+#header__container-03 {
+  background-image: url('/assets/home/desktop/image-hero-federal.jpg');
+}
+
+#header__container-04 {
+  background-image: url('/assets/home/desktop/image-hero-trinity.jpg');
 }
 
 .header__container::before {
@@ -46,4 +61,49 @@
 
 .header__btn img {
   max-height: 18px;
+}
+
+.header__btns-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: -80px;
+  bottom: 0;
+}
+
+.header__next-btn {
+  transition: 0.2s ease-in-out;
+  background-color: #fff;
+  color: var(--grey-mid);
+  font-weight: 700;
+  height: 80px;
+  width: 80px;
+}
+
+.header__next-btn--active {
+  background-color: var(--black);
+  color: #fff;
+}
+
+.header__next-btn:hover:not(.header__next-btn--active) {
+  background-color: var(--grey-light);
+}
+
+@media (max-width: 500px) {
+  #header__container-01 {
+    background-image: url('/assets/home/mobile/image-hero-paramour.jpg');
+  }
+
+  #header__container-02 {
+    background-image: url('/assets/home/mobile/image-hero-seraph.jpg');
+  }
+
+  #header__container-03 {
+    background-image: url('/assets/home/mobile/image-hero-federal.jpg');
+  }
+
+  #header__container-04 {
+    background-image: url('/assets/home/mobile/image-hero-trinity.jpg');
+  }
 }
