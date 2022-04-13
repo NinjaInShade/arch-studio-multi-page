@@ -79,10 +79,21 @@ h3 {
   outline: var(--black) dotted 2px;
 }
 
+@media (max-width: 1150px) {
+  :root {
+    --watermark: 7.5rem;
+    --watermark-ls: -3px;
+  }
+}
+
 @media (max-width: 650px) {
   :root {
     --h1: 3rem;
     --h1-lh: 48px;
     --h1-ls: -1.2px;
+
+    --h2: 2.5rem;
+    --h2-lh: 48px;
+    --h2-ls: -1.5px;
   }
 }
