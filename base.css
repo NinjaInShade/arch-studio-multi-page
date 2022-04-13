@@ -79,6 +79,10 @@ h3 {
   outline: var(--black) dotted 2px;
 }
 
-@media (max-width: 500px) {
-  /* :root {} */
+@media (max-width: 650px) {
+  :root {
+    --h1: 3rem;
+    --h1-lh: 48px;
+    --h1-ls: -1.2px;
+  }
 }
