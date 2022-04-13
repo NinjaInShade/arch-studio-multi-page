@@ -164,7 +164,7 @@
 
 .about__title {
   max-width: 445px;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   color: #fff;
 }
 
@@ -238,6 +238,10 @@
     background: no-repeat url('/assets/home/tablet/image-small-team.jpg');
     background-size: cover;
   }
+
+  .about__container {
+    padding: 168px 0 168px 58px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -278,7 +282,8 @@
     margin: 16px 0 58px 0;
   }
 
-  .welcome__title {
+  .welcome__title,
+  .about__title {
     margin-bottom: 32px;
     max-width: 311px;
   }
@@ -289,5 +294,13 @@
 
   .welcome__watermark {
     display: none;
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .about__container {
+    padding: 180px 32px;
   }
 }
