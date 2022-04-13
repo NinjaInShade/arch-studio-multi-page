@@ -95,6 +95,43 @@
   background-color: var(--grey-light);
 }
 
+.welcome {
+  padding: 200px 100px;
+}
+
+.welcome__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.welcome__watermark {
+  position: absolute;
+  color: var(--grey-light);
+  top: -100px;
+  left: 0;
+}
+
+.welcome__img {
+  margin-left: 125px;
+}
+
+.welcome__text-container {
+  max-width: 445px;
+}
+
+.welcome__title {
+  color: var(--black);
+  margin-bottom: 56px;
+}
+
+.welcome__lead {
+  color: var(--grey-dark);
+}
+
 @media (max-width: 1100px) {
   #header__container-01 {
     background: no-repeat url('/assets/home/tablet/image-hero-paramour.jpg');
