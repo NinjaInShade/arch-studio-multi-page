@@ -132,6 +132,49 @@
   color: var(--grey-dark);
 }
 
+.about {
+  padding: 0 100px;
+}
+
+.about__container {
+  margin: 0 auto;
+  position: relative;
+  max-width: var(--max-width);
+  background: no-repeat url('/assets/home/desktop/image-small-team.jpg');
+  background-size: cover;
+  padding: 168px 0 168px 190px;
+}
+
+.about__container::before {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.about__text-container {
+  position: relative;
+  z-index: 1;
+}
+
+.about__title {
+  max-width: 445px;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.about__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
 @media (max-width: 1150px) {
   .welcome {
     overflow-x: hidden;
@@ -190,6 +233,11 @@
   .header__btns-container {
     display: none;
   }
+
+  .about__container {
+    background: no-repeat url('/assets/home/tablet/image-small-team.jpg');
+    background-size: cover;
+  }
 }
 
 @media (max-width: 650px) {
@@ -210,6 +258,11 @@
 
   #header__container-04 {
     background: no-repeat url('/assets/home/mobile/image-hero-trinity.jpg');
+    background-size: cover;
+  }
+
+  .about__container {
+    background: no-repeat url('/assets/home/mobile/image-small-team.jpg');
     background-size: cover;
   }
 
