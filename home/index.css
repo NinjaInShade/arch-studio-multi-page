@@ -57,17 +57,6 @@
   max-width: 445px;
 }
 
-.header__btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
-.header__btn img {
-  max-height: 18px;
-}
-
 .header__btns-container {
   display: flex;
   justify-content: flex-start;
@@ -166,13 +155,6 @@
   max-width: 445px;
   margin-bottom: 36px;
   color: #fff;
-}
-
-.about__btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
 }
 
 @media (max-width: 1150px) {

@@ -16,6 +16,17 @@ button,
   padding: 24px 32px;
 }
 
+.btn--arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn--arrow img {
+  max-height: 18px;
+}
+
 .btn:hover {
   background-color: var(--grey-dark);
 }
