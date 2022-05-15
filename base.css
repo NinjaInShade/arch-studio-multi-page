@@ -84,10 +84,127 @@ h3 {
   outline: var(--black) dotted 2px;
 }
 
+.portfolio-card {
+  position: relative;
+  min-width: 0;
+}
+
+.portfolio-card::before {
+  position: absolute;
+  content: '';
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 60%) 100%);
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+}
+
+.portfolio-card__watermark {
+  position: absolute;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-weight: 700;
+  right: -12px;
+  top: 32px;
+}
+
+.portfolio-card__footer {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.portfolio-card__title,
+.portfolio-card__subtitle {
+  color: #fff;
+}
+
+.portfolio-card__subtitle {
+  margin-top: 4px;
+}
+
+.portfolio-card__subtitle:not(a) {
+  opacity: 0.75;
+}
+
+.portfolio-card__img {
+  display: block;
+  object-fit: cover;
+  height: 560px;
+  width: 100%;
+}
+
 @media (max-width: 1150px) {
   :root {
     --watermark: 7.5rem;
     --watermark-ls: -3px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .portfolio-card {
+    width: 100%;
+  }
+
+  .portfolio-card::before {
+    height: 100%;
+  }
+
+  .portfolio-card__watermark {
+    font-size: 12.5rem;
+    right: 16px;
+    top: 16px;
+  }
+
+  .portfolio-card__img {
+    height: 240px;
+  }
+
+  #image-del-sol {
+    content: url('/assets/portfolio/tablet/image-del-sol.jpg');
+  }
+
+  #image-228b {
+    content: url('/assets/portfolio/tablet/image-228b.jpg');
+  }
+
+  #image-prototype {
+    content: url('/assets/portfolio/tablet/image-prototype.jpg');
+  }
+
+  #image-seraph {
+    content: url('/assets/portfolio/tablet/image-seraph.jpg');
+  }
+
+  #image-eebox {
+    content: url('/assets/portfolio/tablet/image-eebox.jpg');
+  }
+
+  #image-federal {
+    content: url('/assets/portfolio/tablet/image-federal.jpg');
+  }
+
+  #image-grand {
+    content: url('/assets/portfolio/tablet/image-edelweiss.jpg');
+  }
+
+  #image-netcry {
+    content: url('/assets/portfolio/tablet/image-netcry.jpg');
+  }
+
+  #image-hypers {
+    content: url('/assets/portfolio/tablet/image-hypers.jpg');
+  }
+
+  #image-sxiv {
+    content: url('/assets/portfolio/tablet/image-sxiv.jpg');
+  }
+
+  #image-trinity {
+    content: url('/assets/portfolio/tablet/image-trinity.jpg');
+  }
+
+  #image-paramour {
+    content: url('/assets/portfolio/tablet/image-paramour.jpg');
   }
 }
 
@@ -100,5 +217,57 @@ h3 {
     --h2: 2.5rem;
     --h2-lh: 48px;
     --h2-ls: -1.5px;
+  }
+
+  .portfolio-card__watermark {
+    display: none;
+  }
+
+  #image-del-sol {
+    content: url('/assets/portfolio/mobile/image-del-sol.jpg');
+  }
+
+  #image-228b {
+    content: url('/assets/portfolio/mobile/image-228b.jpg');
+  }
+
+  #image-prototype {
+    content: url('/assets/portfolio/mobile/image-prototype.jpg');
+  }
+
+  #image-seraph {
+    content: url('/assets/portfolio/mobile/image-seraph.jpg');
+  }
+
+  #image-eebox {
+    content: url('/assets/portfolio/mobile/image-eebox.jpg');
+  }
+
+  #image-federal {
+    content: url('/assets/portfolio/mobile/image-federal.jpg');
+  }
+
+  #image-grand {
+    content: url('/assets/portfolio/mobile/image-edelweiss.jpg');
+  }
+
+  #image-netcry {
+    content: url('/assets/portfolio/mobile/image-netcry.jpg');
+  }
+
+  #image-hypers {
+    content: url('/assets/portfolio/mobile/image-hypers.jpg');
+  }
+
+  #image-sxiv {
+    content: url('/assets/portfolio/mobile/image-sxiv.jpg');
+  }
+
+  #image-trinity {
+    content: url('/assets/portfolio/mobile/image-trinity.jpg');
+  }
+
+  #image-paramour {
+    content: url('/assets/portfolio/mobile/image-paramour.jpg');
   }
 }

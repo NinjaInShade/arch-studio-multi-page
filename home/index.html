@@ -64,6 +64,7 @@
 
     <nav class="sidebar" id="sidebar">
       <ul class="sidebar__links">
+        <li><a class="body focus-b sidebar__link" href="/home/index.html">Home</a></li>
         <li><a class="body focus-b sidebar__link" href="/portfolio/index.html">Portfolio</a></li>
         <li><a class="body focus-b sidebar__link" href="/about/index.html">About Us</a></li>
         <li><a class="body focus-b sidebar__link" href="/contact/index.html">Contact</a></li>
@@ -142,77 +143,77 @@
           </div>
         </div>
       </div>
-    </main>
 
-    <!-------------------------->
-    <!---  Featured Projects --->
-    <!-------------------------->
+      <!-------------------------->
+      <!---  Featured Projects --->
+      <!-------------------------->
 
-    <section class="featured">
-      <div class="featured__container">
-        <div class="featured__header">
-          <h2 class="featured__title">Featured</h2>
-          <a href="/portfolio/index.html" class="focus-b btn btn--arrow">
+      <section class="featured">
+        <div class="featured__container">
+          <div class="featured__header">
+            <h2 class="featured__title">Featured</h2>
+            <a href="/portfolio/index.html" class="focus-b btn btn--arrow">
+              See all<img src="/assets/icons/icon-arrow.svg" alt="Decorative arrow"
+            /></a>
+          </div>
+
+          <ul class="featured__list">
+            <li class="portfolio-card">
+              <!-- TODO: Experiment with srcsets, tablet 1100, mobile 650 -->
+              <img
+                src="/assets/portfolio/desktop/image-del-sol.jpg"
+                alt="Big, clean pool with curved architectured building besides it."
+                class="portfolio-card__img"
+                id="image-del-sol"
+              />
+              <div class="portfolio-card__footer">
+                <h3 class="portfolio-card__title">Project Del Sol</h3>
+                <a class="focus-w body portfolio-card__subtitle" href="/portfolio/index.html"
+                  >View All Projects</a
+                >
+              </div>
+              <p class="watermark portfolio-card__watermark">1</p>
+            </li>
+
+            <li class="portfolio-card">
+              <img
+                src="/assets/portfolio/desktop/image-228b.jpg"
+                alt="Beautiful blue sky, with some sort of tall arch in the frame."
+                class="portfolio-card__img"
+                id="image-228b"
+              />
+              <div class="portfolio-card__footer">
+                <h3 class="portfolio-card__title">228B Tower</h3>
+                <a class="focus-w body portfolio-card__subtitle" href="/portfolio/index.html"
+                  >View All Projects</a
+                >
+              </div>
+              <p class="watermark portfolio-card__watermark">2</p>
+            </li>
+
+            <li class="portfolio-card">
+              <img
+                src="/assets/portfolio/desktop/image-prototype.jpg"
+                alt="Modern spanish villa looking architecture."
+                class="portfolio-card__img"
+                id="image-prototype"
+              />
+              <div class="portfolio-card__footer">
+                <h3 class="portfolio-card__title">Le Prototype</h3>
+                <a class="focus-w body portfolio-card__subtitle" href="/portfolio/index.html"
+                  >View All Projects</a
+                >
+              </div>
+              <p class="watermark portfolio-card__watermark">3</p>
+            </li>
+          </ul>
+
+          <a href="/portfolio/index.html" class="focus-b btn btn--arrow featured__btn--mobile">
             See all<img src="/assets/icons/icon-arrow.svg" alt="Decorative arrow"
           /></a>
         </div>
-
-        <ul class="featured__list">
-          <li class="portfolio-card">
-            <!-- TODO: Experiment with srcsets, tablet 1100, mobile 650 -->
-            <img
-              src="/assets/portfolio/desktop/image-del-sol.jpg"
-              alt="Big, clean pool with curved architectured building besides it."
-              class="portfolio-card__img"
-              id="image-del-sol"
-            />
-            <div class="portfolio-card__footer">
-              <h3 class="portfolio-card__title">Project Del Sol</h3>
-              <a class="focus-w body portfolio-card__subtitle" href="/portfolio/index.html"
-                >View All Projects</a
-              >
-            </div>
-            <p class="watermark portfolio-card__watermark">1</p>
-          </li>
-
-          <li class="portfolio-card">
-            <img
-              src="/assets/portfolio/desktop/image-228b.jpg"
-              alt="Beautiful blue sky, with some sort of tall arch in the frame."
-              class="portfolio-card__img"
-              id="228b"
-            />
-            <div class="portfolio-card__footer">
-              <h3 class="portfolio-card__title">228B Tower</h3>
-              <a class="focus-w body portfolio-card__subtitle" href="/portfolio/index.html"
-                >View All Projects</a
-              >
-            </div>
-            <p class="watermark portfolio-card__watermark">2</p>
-          </li>
-
-          <li class="portfolio-card">
-            <img
-              src="/assets/portfolio/desktop/image-prototype.jpg"
-              alt="Modern spanish villa looking architecture."
-              class="portfolio-card__img"
-              id="image-prototype"
-            />
-            <div class="portfolio-card__footer">
-              <h3 class="portfolio-card__title">Le Prototype</h3>
-              <a class="focus-w body portfolio-card__subtitle" href="/portfolio/index.html"
-                >View All Projects</a
-              >
-            </div>
-            <p class="watermark portfolio-card__watermark">3</p>
-          </li>
-        </ul>
-
-        <a href="/portfolio/index.html" class="focus-b btn btn--arrow featured__btn--mobile">
-          See all<img src="/assets/icons/icon-arrow.svg" alt="Decorative arrow"
-        /></a>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-------------------------->
     <!-------  Footer   -------->

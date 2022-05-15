@@ -1,0 +1,29 @@
+.portfolio {
+  padding: 0 100px 160px 100px;
+}
+
+.portfolio__container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 32px;
+}
+
+@media (max-width: 1150px) {
+  .portfolio {
+    padding: 0 100px 200px 100px;
+  }
+
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .portfolio {
+    padding: 72px 32px 72px 32px;
+  }
+}

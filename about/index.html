@@ -5,14 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Arch studio mulit-page website" />
     <link rel="stylesheet" href="/base.css" />
-    <link rel="stylesheet" href="/main.css" />
     <link rel="stylesheet" href="/buttons.css" />
+    <link rel="stylesheet" href="/navbar.css" />
+    <link rel="stylesheet" href="/sidebar.css" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/about/about.css" />
     <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon" />
     <title>Arch studio mulit-page website</title>
   </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <main></main>
+    <main>
+      <!-------------------------->
+      <!------    NAVBAR    ------>
+      <!-------------------------->
+
+      <nav class="navbar">
+        <div class="navbar__container">
+          <aside class="current-page">
+            <div></div>
+            <span class="body current-page__text">about us</span>
+          </aside>
+          <a href="/home/index.html" class="focus-b">
+            <img src="/assets/logo.svg" alt="Arch logo. Arch as text." class="navbar__logo" />
+          </a>
+          <ul class="navbar__links">
+            <li>
+              <a class="body focus-b navbar__link" href="/portfolio/index.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="body focus-b navbar__link navbar__link--active" href="/about/index.html"
+                >About Us</a
+              >
+            </li>
+            <li><a class="body focus-b navbar__link" href="/contact/index.html">Contact</a></li>
+          </ul>
+          <button class="focus-b navbar__hamburger" aria-label="hamburger" id="navbar-btn">
+            <img
+              src="/assets/icons/icon-hamburger.svg"
+              alt="Hamburger icon"
+              class="navbar__hamburger-icon navbar__hamburger--active"
+              id="navbar-open"
+            />
+            <img
+              src="/assets/icons/icon-close.svg"
+              alt="Hamburger close icon"
+              class="navbar__hamburger-icon"
+              id="navbar-close"
+            />
+          </button>
+        </div>
+      </nav>
+
+      <!-------------------------->
+      <!-----    SIDEBAR    ------>
+      <!-------------------------->
+
+      <nav class="sidebar" id="sidebar">
+        <ul class="sidebar__links">
+          <li><a class="body focus-b sidebar__link" href="/home/index.html">Home</a></li>
+          <li><a class="body focus-b sidebar__link" href="/portfolio/index.html">Portfolio</a></li>
+          <li><a class="body focus-b sidebar__link" href="/about/index.html">About Us</a></li>
+          <li><a class="body focus-b sidebar__link" href="/contact/index.html">Contact</a></li>
+        </ul>
+        <div class="sidebar__overlay"></div>
+      </nav>
+    </main>
+
+    <script src="/main.js"></script>
   </body>
 </html>
