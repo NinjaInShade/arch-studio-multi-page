@@ -57,10 +57,21 @@
     url('/assets/about/desktop/image-hero.jpg') no-repeat top left;
 }
 
+#contact__header .header__container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url('/assets/contact/desktop/image-hero.jpg') no-repeat top left;
+}
+
 @media (max-width: 1150px) {
   #about__header .header__container {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
       url('/assets/about/tablet/image-hero.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  #contact__header .header__container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url('/assets/contact/tablet/image-hero.jpg') no-repeat center center;
     background-size: cover;
   }
 
@@ -80,6 +91,12 @@
   #about__header .header__container {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
       url('/assets/about/mobile/image-hero.jpg') no-repeat top center;
+    background-size: contain;
+  }
+
+  #contact__header .header__container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url('/assets/contact/mobile/image-hero.jpg') no-repeat top center;
     background-size: contain;
   }
 
@@ -121,5 +138,6 @@
     padding: 80px 0 0 32px;
     margin-right: 32px;
     margin-left: 0;
+    width: 100%;
   }
 }
