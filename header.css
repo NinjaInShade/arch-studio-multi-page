@@ -1,0 +1,125 @@
+.header {
+  padding: 0 100px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.header__container::before {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  width: calc(100% - 635px);
+  height: 50%;
+}
+
+.header__content-container {
+  background-color: #fff;
+  position: relative;
+  margin-top: 215px;
+  padding: 160px 0 0 180px;
+  margin-left: auto;
+}
+
+.header__title {
+  position: absolute;
+  color: var(--grey-light);
+  top: -115px;
+  left: -15px;
+}
+
+.header__line {
+  background-color: var(--grey);
+  width: 65px;
+  height: 1px;
+}
+
+.header__subtitle {
+  color: var(--black);
+  margin: 75px 0 56px 0;
+  max-width: 445px;
+}
+
+.header__lead {
+  color: var(--grey-dark);
+  max-width: 385px;
+}
+
+#about__header .header__container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url('/assets/about/desktop/image-hero.jpg') no-repeat top left;
+}
+
+@media (max-width: 1150px) {
+  #about__header .header__container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url('/assets/about/tablet/image-hero.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .header__title {
+    right: 0;
+    left: unset;
+  }
+
+  .header__content-container {
+    margin-top: 288px;
+    margin-left: 60px;
+    padding: 90px 0 0 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  #about__header .header__container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url('/assets/about/mobile/image-hero.jpg') no-repeat top center;
+    background-size: contain;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header__container {
+    justify-content: flex-start;
+    max-width: none;
+  }
+
+  .header__container::before {
+    width: 100%;
+    height: 56%;
+    top: unset;
+    bottom: 0;
+  }
+
+  .header__line {
+    display: none;
+  }
+
+  .header__title {
+    visibility: hidden;
+  }
+
+  .header__subtitle,
+  .header__lead {
+    max-width: 311px;
+  }
+
+  .header__subtitle {
+    margin: 0 0 15px 0;
+  }
+
+  .header__content-container {
+    margin-top: 200px;
+    padding: 80px 0 0 32px;
+    margin-right: 32px;
+    margin-left: 0;
+  }
+}
